@@ -9,7 +9,7 @@
       host: "{{ ansible_host }}"
       username: "{{ username }}"
       password: "{{ password }}"
-      transport: cli
+      transport: cli  <---> Starting with Ansible 2.5 transport is not an option.
 
   tasks:
     - name: ios show commands
